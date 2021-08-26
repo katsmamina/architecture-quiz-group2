@@ -1,0 +1,214 @@
+{
+  "plugins": [
+    "jsdoc",
+    "prefer-arrow",
+    "prettier",
+    "spellcheck",
+    "filenames",
+    "folders",
+    "boundaries",
+    "sonarjs",
+    "disable"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2021
+  },
+  "processor": "disable/disable",
+  "overrides": [
+    {
+      "files": ["**/presentation/**/*.js"],
+      "env": {
+        "browser": true
+      }
+    },
+    {
+      "files": ["**/data-access/**/*.js"],
+      "rules": {
+        "no-console": 0
+      },
+      "globals": {
+        "fetch": true,
+        "localStorage": true,
+        "window": true
+      },
+      "settings": {
+        "disable/plugins": ["sonarjs", "jsdoc"]
+      }
+    },
+    {
+      "files": ["*.spec.js"],
+      "rules": {
+        "no-magic-numbers": 0,
+        "no-undefined": 0
+      },
+      "settings": {
+        "disable/plugins": ["sonarjs"]
+      },
+      "env": {
+        "jest": true,
+        "browser": true
+      }
+    },
+    {
+      "files": ["sandbox.js"],
+      "rules": {
+        "no-magic-numbers": 0,
+        "no-console": 0,
+        "no-unused-expressions": 0,
+        "no-lone-blocks": 0,
+        "jsdoc/require-jsdoc": 0,
+        "no-undefined": 0,
+        "no-unused-vars": 0,
+        "spellcheck/spell-checker": 0
+      },
+      "settings": {
+        "disable/plugins": ["sonarjs"]
+      },
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "ignorePatterns": ["dev-scripts/*.js"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "prettier",
+    "plugin:boundaries/strict",
+    "plugin:sonarjs/recommended"
+  ],
+  "rules": {
+    "no-var": 1,
+    "prefer-const": 1,
+    "no-extra-parens": 1,
+    "no-unreachable-loop": 1,
+    "eqeqeq": 1,
+    "no-implicit-coercion": 1,
+    "no-implicit-globals": 1,
+    "no-lone-blocks": 1,
+    "no-return-assign": 1,
+    "no-unused-expressions": 1,
+    "no-useless-computed-key": 1,
+    "no-useless-rename": 1,
+    "no-label-var": 1,
+    "no-shadow": 1,
+    "no-undefined": 1,
+    "arrow-parens": 1,
+    "arrow-body-style": 0,
+    "no-confusing-arrow": 1,
+    "vars-on-top": 0,
+    "no-plusplus": 0,
+    "guard-for-in": 0,
+    "no-unmodified-loop-condition": 1,
+    "no-warning-comments": 1,
+    "no-invalid-this": 1,
+    "prefer-destructuring": 1,
+    "no-nested-ternary": 0,
+    "no-restricted-syntax": [
+      0,
+      {
+        "selector": "ForInStatement"
+      },
+      {
+        "selector": "ForOfStatement"
+      }
+    ],
+    "camelcase": [2, { "properties": "never" }],
+
+    "prettier/prettier": ["error"],
+
+    "prefer-arrow/prefer-arrow-functions": ["warn"],
+
+    "spellcheck/spell-checker": [
+      "warn",
+      { "minLength": 4, "identifiers": false, "strings": false }
+    ],
+
+    "folders/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-]+$", "src"],
+    "filenames/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-.spec]+$"],
+
+    "boundaries/element-types": [
+      2,
+      {
+        "default": "disallow",
+        "rules": [
+          {
+            "from": "business-logic",
+            "allow": ["utils", "data-access", "business-logic", "lib"]
+          },
+          { "from": "data-access", "allow": ["utils", "data-access", "lib"] },
+          {
+            "from": "components",
+            "allow": ["components", "utils", "custom-events", "lib"]
+          },
+          {
+            "from": "custom-events",
+            "allow": ["custom-events", "utils"]
+          },
+          {
+            "from": "handlers",
+            "allow": ["components", "utils", "business-logic", "handlers"]
+          },
+          {
+            "from": "init",
+            "allow": ["init", "listeners", "utils"]
+          },
+          { "from": "lib", "allow": ["lib"] },
+          { "from": "listeners", "allow": ["handlers", "utils"] },
+          { "from": "utils", "allow": ["utils"] }
+        ]
+      }
+    ],
+
+    "import/prefer-default-export": 0,
+    "import/named": 2,
+    "import/no-cycle": 0,
+    "import/extensions": [1, { "js": "always" }],
+
+    "jsdoc/check-alignment": 1,
+    "jsdoc/check-indentation": 1,
+    "jsdoc/check-line-alignment": 1,
+    "jsdoc/check-param-names": 1,
+    "jsdoc/check-syntax": 1,
+    "jsdoc/check-tag-names": 1,
+    "jsdoc/check-types": 1,
+    "jsdoc/check-values": 1,
+    "jsdoc/empty-tags": 1,
+    "jsdoc/newline-after-description": 1,
+    "jsdoc/no-bad-blocks": 1,
+    "jsdoc/no-undefined-types": 1,
+    "jsdoc/require-description": 1,
+    "jsdoc/require-description-complete-sentence": 1,
+    "jsdoc/require-hyphen-before-param-description": 1,
+    "jsdoc/require-jsdoc": 1,
+    "jsdoc/require-param": 1,
+    "jsdoc/require-param-description": 1,
+    "jsdoc/require-param-name": 1,
+    "jsdoc/require-param-type": 1,
+    "jsdoc/require-returns": 1,
+    "jsdoc/require-returns-check": 1,
+    "jsdoc/require-returns-description": 1,
+    "jsdoc/require-returns-type": 1,
+    "jsdoc/require-throws": 1,
+    "jsdoc/require-yields": 1,
+    "jsdoc/require-yields-check": 1,
+    "jsdoc/valid-types": 1,
+
+    "sonarjs/prefer-immediate-return": 0
+  },
+  "settings": {
+    "boundaries/elements": [
+      { "type": "business-logic", "pattern": "business-logic" },
+      { "type": "data-access", "pattern": "data-access" },
+      { "type": "components", "pattern": "components" },
+      { "type": "custom-events", "pattern": "custom-events" },
+      { "type": "handlers", "pattern": "handlers" },
+      { "type": "init", "pattern": "init" },
+      { "type": "lib", "pattern": "lib" },
+      { "type": "listeners", "pattern": "listeners" },
+      { "type": "utils", "pattern": "utils" }
+    ],
+    "boundaries/ignore": ["**/*.spec.js", "**/sandbox.js"]
+  }
+}

@@ -1,0 +1,7 @@
+@import url('./list.css');
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

@@ -1,0 +1,10 @@
+{
+  "study": {
+    "type": "module",
+    "tests": [".spec.js"],
+    "run": true,
+    "debug": true,
+    "environment": true,
+    "save": true
+  }
+}

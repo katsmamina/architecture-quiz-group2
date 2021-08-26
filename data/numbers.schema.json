@@ -1,0 +1,20 @@
+{
+  "title": "numbers",
+  "description": "numbers a user has seen",
+  "required": ["numbers", "input"],
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "number",
+      "description": "the number displayed in the input"
+    },
+    "numbers": {
+      "type": "array",
+      "description": "a history of all numbers, in the order they were selected",
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

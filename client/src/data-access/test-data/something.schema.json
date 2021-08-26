@@ -1,0 +1,13 @@
+{
+  "title": "something",
+  "description": "some test data for the 'DOMContentLoaded' tests (that don't exist yet)",
+  "required": ["aNumber"],
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "aNumber": {
+      "type": "string",
+      "description": "a number written out as a word"
+    }
+  }
+}

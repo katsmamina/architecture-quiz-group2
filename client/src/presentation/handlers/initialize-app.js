@@ -13,7 +13,7 @@ import { listComponent } from '../components/list.js';
 // keep this function! it works and you will need it
 export const initializeApp = async () => {
   // this works! you will only need to change the name of the .json file
-  await initializeState('../../../../data/numbers.json', import.meta);
+  await initializeState();
 
   // you can remove this code to make room for your app
   const inputValue = get('input');

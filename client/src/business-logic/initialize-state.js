@@ -2,6 +2,6 @@
 
 import { load } from '../data-access/load.js';
 
-export const initializeState = async (pathToData = '', meta = { url: '' }) => {
-  await load(pathToData, meta);
+export const initializeState = async () => {
+  await load('../../../data/numbers.json', import.meta);
 };

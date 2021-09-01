@@ -105,7 +105,17 @@
     "no-invalid-this": 1,
     "prefer-destructuring": 1,
     "no-nested-ternary": 0,
-    "no-restricted-syntax": [2, "ClassDeclaration"],
+    "no-restricted-syntax": [
+      2,
+      {
+        "selector": "ClassDeclaration",
+        "message": "using classes is not allowed"
+      },
+      {
+        "selector": "ThisExpression",
+        "message": "using `this` is not allowed"
+      }
+    ],
     "camelcase": [2, { "properties": "never" }],
 
     "prettier/prettier": ["error"],

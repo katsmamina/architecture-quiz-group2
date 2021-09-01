@@ -105,15 +105,7 @@
     "no-invalid-this": 1,
     "prefer-destructuring": 1,
     "no-nested-ternary": 0,
-    "no-restricted-syntax": [
-      0,
-      {
-        "selector": "ForInStatement"
-      },
-      {
-        "selector": "ForOfStatement"
-      }
-    ],
+    "no-restricted-syntax": [2, "ClassDeclaration"],
     "camelcase": [2, { "properties": "never" }],
 
     "prettier/prettier": ["error"],

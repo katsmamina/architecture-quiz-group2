@@ -1,0 +1,376 @@
+{
+    "greeting": "hello",
+    "questions": [
+      {
+        "id": 1,  
+        "question": "Which are correct ways to declare a variable in JavaScript? (strict mode)",
+        "answered": false,
+        "answers": [
+          {
+            "text": "const name = \"Tim\";",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "name = \"Tim\";",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "let name = \"Tim\";",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "var name = \"Tim\";",
+            "correct": true,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "javascript.info",
+            "url": "https://javascript.info/variables"
+          },
+          {
+            "text": "Tyler McGinnis",
+            "url": "https://ui.dev/var-let-const/"
+          }
+        ]
+      },
+      {
+        "id": 2,  
+        "question": "What does `typeof` do?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "changes the type of a primitive value",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "returns a string describing the type of a value",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "determines if a value is primitive",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "can tell the difference between arrays and objects",
+            "correct": false,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "javascript.info",
+            "url": "https://javascript.info/types#type-typeof"
+          },
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+          }
+        ]
+      },
+      {
+        "id": 3,  
+        "question": "Which built-in method returns a string converted to lowercase?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "toLowerCase()",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "toLower()",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "changeCase(case)",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "None of the above.",
+            "correct": false,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase"
+          },
+          {
+            "text": "W3Schools",
+            "url": "https://www.w3schools.com/jsref/jsref_tolowercase.asp"
+          }
+        ]
+      },
+      {
+        "id": 4,  
+        "question": "Which of the following functions of the Array object adds one or more elements to the end of an array and returns the new length of the array?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "pop()",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "push()",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "join()",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "map()",
+            "correct": false,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/jsref/jsref_push.asp"
+          }
+        ]
+      },
+      {
+        "id": 5,  
+        "question": "Which of these is not a comparison operator?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "&lt;",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "&gt;",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "==",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "=&gt;",
+            "correct": true,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/js/js_comparisons.asp"
+          }
+        ]
+      },
+      {
+        "id": 6,  
+        "question": "How many parameters can be passed to a function?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "2",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "none",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "as much as you want",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "1",
+            "correct": false,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/js/js_function_parameters.asp"
+          }
+        ]
+      },
+      {
+        "id": 7,  
+        "question": "Which HTML element do we use to wrap JavaScript's code?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "&lt;js&gt;",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "&lt;javaScript&gt;",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "&lt;script&gt;",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "&lt;body&gt;",
+            "correct": false,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/tags/tag_script.asp"
+          }
+        ]
+      },
+      {
+        "id": 8,  
+        "question": "How do you write 'Hello World' in an alert box?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "msg('Hello World')",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "prompt('Hello World')",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "message('Hello World')",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "alert('Hello World')",
+            "correct": true,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/jsref/met_win_alert.asp"
+          }
+        ]
+      },
+      {
+        "id": 9,  
+        "question": "How do you call a function named 'myFunction'?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "myFunction()",
+            "correct": true,
+            "selected": false
+          },
+          {
+            "text": "function.myFunction",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "let function",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "const function",
+            "correct": false,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/js/js_function_call.asp"
+          }
+        ]
+      },
+      {
+        "id": 10,  
+        "question": "How to write an IF statement in JavaScript?",
+        "answered": false,
+        "answers": [
+          {
+            "text": "if else (a === b)",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "if a(===b)",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "else if (a)==b",
+            "correct": false,
+            "selected": false
+          },
+          {
+            "text": "if (a === b)",
+            "correct": true,
+            "selected": false
+          }
+        ],
+        "links": [
+          {
+            "text": "MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
+          },
+          {
+            "text": "W3",
+            "url": "https://www.w3schools.com/js/js_if_else.asp"
+          }
+        ]
+      }
+    ]
+  }
+  

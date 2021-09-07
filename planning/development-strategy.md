@@ -15,10 +15,20 @@ arrays.
 
 ```js
 {
-  "id": "integer",
-  "question": "string",
+  "id": integer,
+  "question": string,
   "answers": [
+    {
+    "text": ,
+    "correct": boolean,
+    "selected": boolean
+    } 
 
+    {
+    "text": ,
+    "correct": boolean,
+    "selected": boolean
+    } 
   ]    
 }
 ```
@@ -44,9 +54,10 @@ arrays.
 - [x] Study and modify the backlog
 - [x] Devise a development strategy
 - [ ] Design a wireframe to set guidelines for UI/UX design
+- [ ] await response from 
 - [ ] Design a user story dependencies diagram
 
-This user story is developed on branch `master`
+This user story is developed on branch `planning`
 
 ---
 
@@ -68,12 +79,11 @@ quiz
 
 ## 2. Begin the Quiz (one question at a time)
 
-**As a user I want to see the questions**
+**As a user I want to see the questions, one at a time, with all answers**
 
 The user clicks on the start button and goes to question number one
 
-- [ ] The user can see one question at a time, together with the different
-      answers
+- [ ] The user can see one question at a time, together with the different answers
 
 This user story is developed on the branch `2-start-quiz`.  
 This branch is merged into the `master` branch after completion.
@@ -84,19 +94,22 @@ This branch is merged into the `master` branch after completion.
 
 **As a user I want to select my answer for each question**
 
-The user sees a list of possible answers from which to choose one; If the
-selected answer is correct, the text of the selected answer will be in green,
-red otherwise. Maybe we could use a timer that limits the time to select an
-answer.
+The user can choose an answer by clicking on the div.
+After  an answer is selected, the background color of the correct answer's div turns green, and the background color of the incorrect answers' divs turns reddish.
 
-- [ ] Use radio button if there is only one correct answer.
-- [ ] Use chekboxes if there is more than one correct answer (optional)
-- [ ] The correct answer is displayed in green
-- [ ] The wrong answer is displayed in red
-- [ ] Implementing a progress bar (optional)
+- [ ] 
+- [ ] 
+- [ ] The correct answer div is displayed in greenish
+- [ ] The wrong answers divs are displayed in reddish
 
 This user story is developed on the branch `3-select-answer`.  
 This branch is merged into the `master` branch after completion.
+
+#### Business logic
+- access 
+#### Interface
+
+#### Interaction
 
 ---
 

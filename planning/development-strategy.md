@@ -10,8 +10,18 @@ questions.
 > describe the data used in your project.
 
 We use JSON to store the data and the state of the application; data types are
-arrays and objects. Data is stored in an array of objects containing objects and
+arrays and objects. Data is stored in an object,
 arrays.
+
+```js
+{
+  "id": "integer",
+  "question": "string",
+  "answers": [
+
+  ]    
+}
+```
 
 - Questions & answers
 - Links
@@ -49,6 +59,7 @@ quiz
 
 - [ ] Create the index.html and the initial styles.css
 - [ ] Add the start button
+- [ ] 
 
 - This user story is developed on the branch `1-welcome`.  
   This branch is merged into the `master` branch after completion.

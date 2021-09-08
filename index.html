@@ -9,14 +9,51 @@
     <link href="./client/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="user-interface">
+    <div class="root" id="root" >
+      <!-- This will deploy at first loading of the page, after press start we go to the main page -->
+      <div id="welcomeModalPopUp" class="welcomeModalPopUp">
+        <img src="" alt="logoQuiz">
+        <div id="welcomeMessage" class="welcomeMessage">
+          Lorem ipsum dolor sit amet.
+          <button type="submit" id="btnStart" class="btnStart">Let's Start!</button>
+        </div>
+      </div>
+      <!-- This is the main page -->
+      <div id="quizHeader" class="quizHeader">
+        <div id="logo" class="logo">
+          <img src="" alt="logoQuiz">
+        </div>
+        <div id="progress" class="progress"></div>
+        <div id="liveScore" class="liveScore"></div>
+        <div id="restartBtn" class="restartBtn"></div>
+      </div>
+      <div id="quizContainer" class="quizContainer">
+        <div id="quizQuestion" class="quizQuestion">
+          <h2>Question?</h2>
+        </div>
+        <div id="quizAnswers" class="quizAnswers">
+          <div id="answer1" class="correct"></div>
+          <div id="answer2" class="incorrect"></div>
+          <div id="answer3" class="answer"></div>
+          <div id="answer4" class="answer"></div>
+          <button type="submit" id="btnPrevious" class="btnPrevious">Previous</button>
+          <button type="submit" id="btnNext" class="btnNext">Next</button>
+        </div>
+      </div>
+      <footer id="footer" class="footer">
+        Hack Your Future Class 15
+      </footer>
+
+    </div>
+    
+    <!-- <div id="user-interface">
       <div id="input-root"></div>
       <hr />
       <div class="side-by-side">
         <div id="unsorted"></div>
         <div id="sorted"></div>
       </div>
-    </div>
+    </div> -->
 
     <script
       type="module"

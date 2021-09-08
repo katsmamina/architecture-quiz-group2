@@ -4,7 +4,6 @@ You can test your JavaScript skills with this quiz. The test contains 10
 questions.
 
 ---
-
 ## Data
 
 > describe the data used in your project.
@@ -84,7 +83,7 @@ By accessing the web page, user sees a welcome message, rules of the quiz, and t
 *CSS*
 - style of h1
 - style of p-rules
-- style of button
+- style of the button
 
 #### Interaction
 *Listeners*
@@ -121,7 +120,7 @@ This branch is merged into the `master` branch after completion.
 
 *Handlers*
 - the text of the question from json file is displayed in 'h1-question' 
-- the answers are displayed one-by-one in divs 'answer-one', 'answer-two', 'answer-three', answer-four'
+- the answers are displayed one-by-one in divs 'answer-one', 'answer-two', 'answer-three', 'answer-four'
 
 ---
 
@@ -139,48 +138,88 @@ After the answer is selected, the background color of the correct answer's div t
 This user story is developed on the branch `3-select-answer`.  
 This branch is merged into the `master` branch after completion.
 
-#### Business logic
-- access 
+#### Business logic 
+- in the object of the question, find the answer where "correct" equals to true. 
+- find the answers where 'correct' equals to false
 #### Interface
-*HTML*
 
 *CSS*
-- style 
+- add new classes:
+  - 'correct':  background color – greenish
+  - 'incorrect': background-color - reddish
 #### Interaction
 *Handlers*
+- if 'correct' equals to true and 'selected' equals to true, add class 'correct', else => add class 'incorrect'
 
 *Listeners*
----
+- add event listener to the div, on click
 
+---
 ## 4. View the Progress
 
 **As a user I want to see how many questions are completed** 
 
 The number of questions answered is displayed above the questions. 
-User can see the total number of questions and the number of answered questions in the format of XX/YY, wherre XX - number of answered questions, YY - total number of questions
+User can see the total number of questions and the number of answered questions in the format of XX/YY, where XX - number of answered questions, YY - total number of questions
 
-- [ ] Increase the score by one after selecting a right answer
-- [ ] No increment if the answer is wrong
-- [ ] Show the score after each selection
+- [ ] Increase the number by one after answering a question
+- [ ] Show the progress above each question
 
-This user story is developed on the branch `4-score`  
+This user story is developed on the branch `4-progress`  
 This branch is merged to the `master`
 
 #### Business logic
-- access 
+- use 'add' function to increment one number to the XX
+- access array length to define the YY number
 #### Interface
 *HTML*
-
+- progress (div) inside the header: id = 'div-progress', class = 'div-progress'
+  - numbers (p): id = 'p-progress', class = 'p-progress'
+  
 *CSS*
+- style for the progress div 
+- style for numbers (paragraph)
+#### Interaction
+*Handlers*
+- show the first number 
+- show the second number 
+  
+*Listeners*
+- the event is triggered by clicking on one of the 'answer' divs
+
+---
+## 5. Next question
+
+**As a user I want to proceed to the next question**
+
+Once the quiz is completed the results are shown
+
+- [ ] Display the final score
+- [ ] Restart the quiz
+
+This user story is developed on the branch `5-next`  
+This branch is merged into the `master` branch after completion.
+
+#### Business logic
+- increment the id of the question by using 'add.js' business-logic
+- access the question and answers with the new id 
+#### Interface
+*HTML*
+- button 'next': id = 'btn-next', class = 'btn-next'
+  
+*CSS*
+- style of the button
 
 #### Interaction
 *Handlers*
-
+- ...
+-  
+  
 *Listeners*
+- the event is triggered by clicking on the 'next' button
 
 ---
-
-## 5. Result of the quiz
+## 6. Result of the quiz
 
 **As a user I want to see the result of the quiz once it is completed**
 
@@ -189,12 +228,35 @@ Once the quiz is completed the results are shown
 - [ ] Display the final score
 - [ ] Restart the quiz
 
-This user story is developed on the branch `5-result`  
+This user story is developed on the branch `6-result`  
 This branch is merged into the `master` branch after completion.
 
 #### Business logic
 - access
 - 
+#### Interface
+*HTML*
+- container of the result 
+
+*CSS*
+
+#### Interaction
+*Handlers*
+
+*Listeners*
+
+---
+## 7. Restart the quiz
+
+**As a user I want to be able to restart the quiz once it is completed**
+
+- [ ] Restart the quiz
+
+This user story is developed on the branch `7-restart`  
+This branch is merged into the `master` branch after completion.
+
+#### Business logic
+- access 
 #### Interface
 *HTML*
 
@@ -206,36 +268,20 @@ This branch is merged into the `master` branch after completion.
 *Listeners*
 
 ---
-
-
-
-#### Business logic
-- access 
-#### Interface
-*HTML*
-
-*CSS*
-
-#### Interaction
-*Handlers*
-
-*Listeners*
-
-
-
-#### Business logic
-- access 
-#### Interface
-*HTML*
-
-*CSS*
-
-#### Interaction
-*Handlers*
-
-*Listeners*
-
+## 8. View the result while completing the quiz (optional)
 
 - [ ] Increase the score by one after selecting a right answer
 - [ ] No increment if the answer is wrong
 - [ ] Show the score after each selection
+  
+#### Business logic
+- access 
+#### Interface
+*HTML*
+
+*CSS*
+
+#### Interaction
+*Handlers*
+
+*Listeners*

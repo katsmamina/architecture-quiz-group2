@@ -1,7 +1,11 @@
-@import url('./list.css');
+body {
+  background: radial-gradient(circle at 10% 20%, rgb(251, 221, 19) 0.1%, rgb(255, 153, 1) 90%);
+}
+
+/* @import url('./list.css');
 
 .side-by-side {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */

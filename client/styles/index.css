@@ -1,7 +1,158 @@
-@import url('./list.css');
+body {
+  box-sizing: border-box;
+  background: #3e5151; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right bottom, #decba4, #3e5151); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right bottom, #decba4, #3e5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Nunito', sans-serif;
+}
+
+/* This is for the "Welcome" modal pop up */
+
+.welcomeBox {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.welcomeLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.btnStart {
+  background-color: turquoise;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* This is for the main page */
+
+.quizHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoJSQ {
+  width: 200px;
+  padding-left: 60px;
+}
+
+.progress {
+  background-color: #decba4;
+  padding: 0.5rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  color: #3e5151;
+}
+
+.liveScore {
+  background-color: #decba4;
+  padding: 0.5rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  color: #3e5151;
+}
+
+.restartBtn {
+  background-color: rgb(35, 194, 206);
+  padding: 0.5rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.quizContainer {
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.answer {
+  background-color: #decba4;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #3e5151;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #93f1ba;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #3e5145;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.incorrect {
+  background-color: #b32929;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #decba4;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+/* This is for the "Final Score" modal pop up */
+
+.finalBox {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.welcomeLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.btnTryAgain {
+  background-color: turquoise;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* @import url('./list.css');
 
 .side-by-side {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */

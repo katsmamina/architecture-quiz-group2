@@ -4,19 +4,73 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./client/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project!</title>
-
+    <title>Js Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <link href="./client/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="user-interface">
+    <div class="root" id="root" >
+      <!-- This will deploy at first loading of the page, after press start we go to the main page -->
+      <!-- <div id="welcomeModalPopUp" class="welcomeMPActive">
+        <div id="welcomeBox" class="welcomeBox">
+          <img class="welcomeLogo" src="/client/assets/LogoJSQ.png" alt="logoQuiz">
+          <div id="welcomeMessage" class="welcomeMessage">
+            <h1>Welcome to JS Quiz! Here you can test your JavaScript Knowledge</h1>
+            <button type="submit" id="btnStart" class="btnStart">Let's Start!</button>
+          </div>
+        </div>
+      </div> -->
+      <!-- This is the main page -->
+      <div id="quizHeader" class="quizHeader">
+        <div id="logo" class="logo">
+          <img class="logoJSQ" src="/client/assets/LogoJSQ.png" alt="logoQuiz">
+        </div>
+        <div id="progress" class="progress">Question 1/10</div>
+        <div id="liveScore" class="liveScore">Your Score is: 0</div>
+        <div id="restartBtn" class="restartBtn">Restart Quiz!</div>
+      </div>
+      <div id="quizContainer" class="quizContainer">
+        <div id="quizQuestion" class="quizQuestion">
+          <h2>Question?</h2>
+        </div>
+        <div id="quizAnswers" class="quizAnswers">
+          <div id="answer1" class="correct">Option 1 is correct</div>
+          <div id="answer2" class="incorrect">Option 2 is incorrect</div>
+          <div id="answer3" class="answer">Option 3</div>
+          <div id="answer4" class="answer">Option 4</div>
+          <button type="submit" id="btnPrevious" class="btnPrevious">Previous</button>
+          <button type="submit" id="btnNext" class="btnNext">Next</button>
+        </div>
+      </div>
+      <footer id="footer" class="footer">
+        Hack Your Future Class 15
+      </footer>
+
+    </div>
+
+          <!-- This will be deployed as a modal pop up with the final score and the option to try again after answer all questions -->
+      <!-- <div id="welcomeModalPopUp" class="welcomeMPActive">
+        <div id="finalBox" class="finalBox">
+          <img class="welcomeLogo" src="/client/assets/LogoJSQ.png" alt="logoQuiz">
+          <div id="finalMessage" class="finalMessage">
+            <h3>Thanks for using JS Quiz! Your Final Score is:</h1>
+            <button type="submit" id="btnTryAgain" class="btnTryAgain">Try Again!</button>
+          </div>
+        </div>
+      </div>
+     -->
+          <!-- This is the example in the original repo -->
+
+    <!-- <div id="user-interface">
       <div id="input-root"></div>
       <hr />
       <div class="side-by-side">
         <div id="unsorted"></div>
         <div id="sorted"></div>
       </div>
-    </div>
+    </div> -->
 
     <script
       type="module"

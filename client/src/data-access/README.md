@@ -2,7 +2,9 @@
 
 Functions you can use in your Business Logic to access and modify program state.
 
-Each function is stored in a separate file so that all actions are easily visible, and so that dependency graphs clearly indicate which actions are used where.
+Each function is stored in a separate file so that all actions are easily
+visible, and so that dependency graphs clearly indicate which actions are used
+where.
 
 - [`insert(key = '', value)`](#insertkey---value)
 - [`find(key = '')`](#findkey--)
@@ -20,11 +22,14 @@ Each function is stored in a separate file so that all actions are easily visibl
 
 ## [`insert(key = '', value)`](./insert.js)
 
-This function will add a new key/value pair to your program's state. It will only work if the key does not exist already, if you try inserting a key that already exists the function will throw an error
+This function will add a new key/value pair to your program's state. It will
+only work if the key does not exist already, if you try inserting a key that
+already exists the function will throw an error
 
 - **args**:
   - _key (string)_: The key to insert into your program's state.
-  - _value (JSON data)_: The value to save in key. The value must be a JSON type: _string, number, boolean, null, array or object_
+  - _value (JSON data)_: The value to save in key. The value must be a JSON
+    type: _string, number, boolean, null, array or object_
 - **returns**: `undefined`, no return value
 - **throws**:
   - _TypeError_: If the key is not a string
@@ -54,7 +59,8 @@ export const addNewUser = (userName = '', email = '') => {
 
 ## [`find(key = '')`](./find.js)
 
-This function will return the value saved behind a specific key. It can only find keys that already exist in state!
+This function will return the value saved behind a specific key. It can only
+find keys that already exist in state!
 
 - **args**:
   - _key (string)_: The key to find
@@ -89,7 +95,8 @@ export const getUser = (userName = '') => {
 Returns all of the key/value pairs in state as an array of objects:
 
 - **args**: none
-- **returns**: An array of objects representing all the key/value pairs in state. The values are all clones so you cannot modify state by side-effect.
+- **returns**: An array of objects representing all the key/value pairs in
+  state. The values are all clones so you cannot modify state by side-effect.
 - **throws**: none
 - **side-effect**: none
 
@@ -127,7 +134,9 @@ export const listUsers = () => {
 
 ## [`save(key ='', value)`](./save.js)
 
-Updates an existing entry in state with a new value. If the key does not already exist it will throw an error, you need to `insert` first before you can `save` changes later.
+Updates an existing entry in state with a new value. If the key does not already
+exist it will throw an error, you need to `insert` first before you can `save`
+changes later.
 
 - **args**:
   - _key (string)_: where to save changes
@@ -198,7 +207,8 @@ Removes all key/value pairs
 - **args**: none
 - **returns**: `undefined`, no return value.
 - **throws**: none
-- **side-effect**: All data will be removed from state, no key/value pairs will be left.
+- **side-effect**: All data will be removed from state, no key/value pairs will
+  be left.
 
 <details>
 <summary>use case</summary>
@@ -292,13 +302,18 @@ export const listUsers = () => {
 
 ## [`load(dataPath = '', import.meta)`](./load.js)
 
-The `load` function is different from the rest of these functions. You will need to call it once when your program is initialized and never again.
+The `load` function is different from the rest of these functions. You will need
+to call it once when your program is initialized and never again.
 
-It also works using `async`/`await` - you don't need to be understand this! The project starter will already have this code written for you, and you will study it in the next module.
+It also works using `async`/`await` - you don't need to be understand this! The
+project starter will already have this code written for you, and you will study
+it in the next module.
 
 - **args**
-  - _dataPath (string)_: A relative path from the file calling `load` to your .json data file.
-  - _meta ({ url: '' })_: the value of `import.meta` in the file initiating the `load` call
+  - _dataPath (string)_: A relative path from the file calling `load` to your
+    .json data file.
+  - _meta ({ url: '' })_: the value of `import.meta` in the file initiating the
+    `load` call
 - **returns**: `undefined`, no return value
 - **throws**:
   - _TypeError_: If the dataPath is not a string
@@ -308,7 +323,9 @@ It also works using `async`/`await` - you don't need to be understand this! The 
 - **side-effects**:
   - removes extra keys from state that are not in your data
   - adds keys to state that are not in your data
-  - _does not_ modify keys in state that are also in your data (careful! This means your program's state will not always be what is written in your data file)
+  - _does not_ modify keys in state that are also in your data (careful! This
+    means your program's state will not always be what is written in your data
+    file)
 
 <details>
 <summary>use case</summary>

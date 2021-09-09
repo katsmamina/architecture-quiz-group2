@@ -14,7 +14,7 @@ body {
 
 .logoJSQ {
   width: 200px;
-  padding-left: 100px;
+  padding-left: 60px;
 }
 
 .progress {
@@ -39,6 +39,7 @@ body {
   border-radius: 30px;
   font-size: 1.5rem;
   color: white;
+  cursor: pointer;
 }
 
 .quizContainer {
@@ -58,6 +59,8 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
   color: #3E5151;
+  margin: 0.5rem;
+  cursor: pointer;
 }
 
 .correct {
@@ -66,6 +69,8 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
   color: #3e5145;
+  margin: 0.5rem;
+  cursor: pointer;
 }
 
 .incorrect {
@@ -74,6 +79,8 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
   color:#DECBA4;
+  margin: 0.5rem;
+  cursor: pointer;
 }
 /* @import url('./list.css');
 

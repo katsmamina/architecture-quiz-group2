@@ -1,23 +1,18 @@
 body {
   box-sizing: border-box;
-  background: #3E5151;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right bottom, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right bottom, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3e5151; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right bottom, #decba4, #3e5151); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right bottom, #decba4, #3e5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: 'Nunito', sans-serif;
 }
 
 /* This is for the "Welcome" modal pop up */
 
-.welcomeMPActive {
-
-}
-
 .welcomeBox {
   display: flex;
   margin: auto;
   flex-direction: column;
-  background-color:white;
-  display: grid;
+  background-color: white;
   border-radius: 30px;
   padding: 2rem;
 }
@@ -29,8 +24,8 @@ body {
   width: 40%;
 }
 
-.btnStart{
-  background-color:turquoise;
+.btnStart {
+  background-color: turquoise;
   border: none;
   border-radius: 5px;
   padding: 1rem;
@@ -53,19 +48,19 @@ body {
 }
 
 .progress {
-  background-color: #DECBA4;
+  background-color: #decba4;
   padding: 0.5rem;
   border-radius: 30px;
   font-size: 1.5rem;
-  color: #3E5151;
+  color: #3e5151;
 }
 
 .liveScore {
-  background-color:#DECBA4;
+  background-color: #decba4;
   padding: 0.5rem;
   border-radius: 30px;
   font-size: 1.5rem;
-  color: #3E5151;
+  color: #3e5151;
 }
 
 .restartBtn {
@@ -94,17 +89,17 @@ h2 {
 }
 
 .answer {
-  background-color:#DECBA4;
+  background-color: #decba4;
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 1rem;
-  color: #3E5151;
+  color: #3e5151;
   margin: 0.5rem;
   cursor: pointer;
 }
 
 .correct {
-  background-color:#93f1ba;
+  background-color: #93f1ba;
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 1rem;
@@ -114,14 +109,15 @@ h2 {
 }
 
 .incorrect {
-  background-color:#b32929;
+  background-color: #b32929;
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 1rem;
-  color:#DECBA4;
+  color: #decba4;
   margin: 0.5rem;
   cursor: pointer;
 }
+
 /* @import url('./list.css');
 
 .side-by-side {

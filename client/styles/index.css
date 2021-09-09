@@ -118,6 +118,37 @@ h2 {
   cursor: pointer;
 }
 
+/* This is for the "Final Score" modal pop up */
+
+.finalBox {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.welcomeLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.btnTryAgain {
+  background-color: turquoise;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
 /* @import url('./list.css');
 
 .side-by-side {

@@ -4,38 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./client/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project!</title>
-
+    <title>Js Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <link href="./client/styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <div class="root" id="root" >
       <!-- This will deploy at first loading of the page, after press start we go to the main page -->
-      <div id="welcomeModalPopUp" class="welcomeModalPopUp">
-        <img src="/client/assets/LogoJSQ.png" alt="logoQuiz">
+      <!-- <div id="welcomeModalPopUp" class="welcomeModalPopUp">
+        <img src="" alt="logoQuiz">
         <div id="welcomeMessage" class="welcomeMessage">
           Lorem ipsum dolor sit amet.
           <button type="submit" id="btnStart" class="btnStart">Let's Start!</button>
         </div>
-      </div>
+      </div> -->
       <!-- This is the main page -->
       <div id="quizHeader" class="quizHeader">
         <div id="logo" class="logo">
-          <img src="" alt="logoQuiz">
+          <img class="logoJSQ" src="/client/assets/LogoJSQ.png" alt="logoQuiz">
         </div>
-        <div id="progress" class="progress"></div>
-        <div id="liveScore" class="liveScore"></div>
-        <div id="restartBtn" class="restartBtn"></div>
+        <div id="progress" class="progress">Question 1/10</div>
+        <div id="liveScore" class="liveScore">Your Score is: 0</div>
+        <div id="restartBtn" class="restartBtn">Restart Quiz!</div>
       </div>
       <div id="quizContainer" class="quizContainer">
         <div id="quizQuestion" class="quizQuestion">
           <h2>Question?</h2>
         </div>
         <div id="quizAnswers" class="quizAnswers">
-          <div id="answer1" class="correct"></div>
-          <div id="answer2" class="incorrect"></div>
-          <div id="answer3" class="answer"></div>
-          <div id="answer4" class="answer"></div>
+          <div id="answer1" class="correct">Option 1 is correct</div>
+          <div id="answer2" class="incorrect">Option 2 is incorrect</div>
+          <div id="answer3" class="answer">Option 3</div>
+          <div id="answer4" class="answer">Option 4</div>
           <button type="submit" id="btnPrevious" class="btnPrevious">Previous</button>
           <button type="submit" id="btnNext" class="btnNext">Next</button>
         </div>

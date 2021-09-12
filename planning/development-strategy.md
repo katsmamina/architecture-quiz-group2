@@ -84,6 +84,7 @@ By accessing the web page, user sees a welcome message, rules of the quiz, and t
 - style of h1
 - style of p-rules
 - style of the button
+- all other elements are hidden (class "hide" is added)
 
 #### Interaction
 *Listeners*
@@ -144,8 +145,8 @@ This user story is developed on the branch `3-select-answer`.
 This branch is merged into the `master` branch after completion.
 
 #### Business logic 
-- In the object of the question, find the answer where "correct" equals to true – 'find-true.js'
-- Find the answers where 'correct' equals to false – 'find-false.js'
+- in the object of the question, find the answer where "correct" equals to true – 'find-true.js'
+- find the answers where 'correct' equals to false – 'find-false.js'
 #### Interface
 
 *CSS*
@@ -210,7 +211,7 @@ This branch is merged into the `master` branch after completion.
 - access the question and answers of the new id
 #### Interface
 *HTML*
-- button 'next': id = 'btn-next', class = 'btn-next'
+- button changes innerHTML: id = 'btn-next', class = 'btn-next'
   
 *CSS*
 - style of the button
@@ -287,6 +288,9 @@ add listener (click) to the 'restart' button
 - [ ] Increase the score by one after selecting a right answer
 - [ ] No increment if the answer is wrong
 - [ ] Show the score after each selection, above the questions
+
+This user story is developed on the branch `8-score`  
+This branch is merged into the `master` branch after completion.
 
 #### Business logic
 - use add.js to increment the first number if the answer is correct

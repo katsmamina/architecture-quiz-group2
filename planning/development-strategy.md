@@ -104,10 +104,11 @@ This branch is merged into the `master` branch after completion.
 #### Business logic
   <!-- need to check ! -->
 - In the json file, access one of the objects with selected id, starting from 1
+- Use accessQuestion function
 
 #### Interface
 *HTML*
-- Header container (div): id = 'quizHeader', class = 'quizHeader'
+- Header container (div): id = 'quiz-header', class = 'quiz-header'
   - logo container  (div): id = 'logo', class = 'logo'
     - logo (img): class = 'logoJSQ'
 - Question (h1): id = 'h1-question', class = 'h1-question'
@@ -122,9 +123,9 @@ This branch is merged into the `master` branch after completion.
 #### Interaction
 
 *Handlers*
-- hide the name of the quiz, the the description and the start button 
-- display in the 'h1-question' the text of the question from json file 
-- display the answers of that question one-by-one in divs 'answer-one', 'answer-two', 'answer-three', 'answer-four'
+- 'hide.js' – hide the name of the quiz, the the description and the start button
+- 'display-h1.js' – display in the 'h1-question' the text of the question from json file
+- 'display-answers.js' – display the answers of that question one-by-one in divs 'answer-one', 'answer-two', 'answer-three', 'answer-four'
 
 ---
 
@@ -135,7 +136,7 @@ This branch is merged into the `master` branch after completion.
 The user can choose an answer by clicking on the correspondent div.
 After the answer is selected, the background color of the correct answer's div turns green, and the background color of the incorrect answers' divs turns reddish.
 
-- [ ] user can click on the div of the chosen answer
+- [ ] User can click on the div of the chosen answer
 - [ ] The correct answer div is displayed in greenish
 - [ ] The wrong answers divs are displayed in reddish
 
@@ -143,8 +144,8 @@ This user story is developed on the branch `3-select-answer`.
 This branch is merged into the `master` branch after completion.
 
 #### Business logic 
-- in the object of the question, find the answer where "correct" equals to true. 
-- find the answers where 'correct' equals to false
+- In the object of the question, find the answer where "correct" equals to true – 'find-true.js'
+- Find the answers where 'correct' equals to false – 'find-false.js'
 #### Interface
 
 *CSS*
@@ -156,14 +157,14 @@ This branch is merged into the `master` branch after completion.
 - if 'correct' equals to true and 'selected' equals to true, add class 'correct', else => add class 'incorrect'
 
 *Listeners*
-- add event listener to the div, on click
+- 'choose-listener.js', add event listener to the div, on click
 
 ---
 ## 4. View the Progress
 
 **As a user I want to see how many questions are completed** 
 
-The number of questions answered is displayed above the questions. 
+The number of questions answered is displayed above the questions
 User can see the total number of questions and the number of answered questions in the format of XX/YY, where XX - number of answered questions, YY - total number of questions
 
 - [ ] Increase the number by one after answering a question

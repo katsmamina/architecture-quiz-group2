@@ -1,3 +1,5 @@
+/* general */
+
 body {
   box-sizing: border-box;
   background: #3e5151; /* fallback for old browsers */
@@ -6,35 +8,19 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-/* This is for the "Welcome" modal pop up */
-
-.welcomeBox {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 30px;
-  padding: 2rem;
+.hide {
+  display: none;
 }
 
-.welcomeLogo {
+footer {
+  position:fixed;
+  top: 95%;
+}
+
+.footer {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  text-align: center;
 }
-
-.btnStart {
-  background-color: turquoise;
-  border: none;
-  border-radius: 5px;
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* This is for the main page */
 
 .quizHeader {
   display: flex;
@@ -63,16 +49,13 @@ body {
   color: #3e5151;
 }
 
-.restartBtn {
-  background-color: rgb(35, 194, 206);
-  padding: 0.5rem;
-  border-radius: 30px;
-  font-size: 1.5rem;
-  color: white;
-  cursor: pointer;
+.instruct {
+  text-align: center;
+  padding: 10px
 }
 
-.quizContainer {
+/* This is for the main page */
+.container {
   background-color: white;
   display: block;
   margin-left: auto;
@@ -82,11 +65,29 @@ body {
   border-radius: 30px;
 }
 
+h1 {
+  text-align: center;
+  font-weight: 1000;
+}
+
 h2 {
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
 }
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  background-color: turquoise;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* elements of questions and answers */
 
 .answer {
   background-color: #decba4;
@@ -118,8 +119,7 @@ h2 {
   cursor: pointer;
 }
 
-/* This is for the "Final Score" modal pop up */
-
+/* This is for the "Final Score" part */
 .finalBox {
   display: flex;
   margin-left: auto;
@@ -131,7 +131,7 @@ h2 {
   padding: 2rem;
 }
 
-.welcomeLogo {
+.resultLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -148,11 +148,4 @@ h2 {
   cursor: pointer;
 }
 
-
-/* @import url('./list.css');
-
-.side-by-side {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
+/* /* @import url('./list.css'); */

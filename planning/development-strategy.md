@@ -74,21 +74,17 @@ By accessing the web page, user sees a welcome message, rules of the quiz, and t
 
 #### Interface
 *HTML*
-- container (div): id = 'container-start', class = 'container-start'
-     - quiz logo (img): id = 'logo', class = 'logo'
+- container (div): id = `container-start`, class = `container-start`
+     - quiz logo (img): id = `logo`, class = `logo`
      - welcome header (h1): id = ''
-     - rules description (p): id = 'p-rules', class = 'p-rules'
-     - Start button (button): id = 'btn-start', class = 'btn-start'
+     - rules description (p): id = `p-rules`, class = `p-rules`
+     - Start button (button): id = `btn-start`, class = `btn-start`
 
 *CSS*
 - style of h1
 - style of p-rules
 - style of the button
 - all other elements are hidden (class "hide" is added)
-
-#### Interaction
-*Listeners*
-- On clicking the Start button, user is sent to questions
 
 ---
 ## 2. See questions of the quiz (one question at a time)
@@ -105,29 +101,30 @@ This branch is merged into the `master` branch after completion.
 #### Business logic
   <!-- need to check ! -->
 - In the json file, access one of the objects with selected id, starting from 1
-- Use accessQuestion function
+- Use `accessQuestion` function
 
 #### Interface
 *HTML*
-- Header container (div): id = 'quiz-header', class = 'quiz-header'
-  - logo container  (div): id = 'logo', class = 'logo'
-    - logo (img): class = 'logoJSQ'
-- Question (h1): id = 'h1-question', class = 'h1-question'
-- Questions container (div): id = 'div-questions-container', class = 'div-questions-container'
-  - answer 1 (div): id = 'answer-one', class = 'answer-one'
-  - answer 2 (div): id = 'answer-two', class = 'answer-two'
-  - answer 3 (div): id = 'answer-three', class = 'answer-three'
-  - answer 4 (div): id = 'answer-four', class = 'answer-four'
+- Header container (div): id = `quiz-header`, class = `quiz-header`
+  - logo container  (div): id = `logo`, class = `logo`
+    - logo (img): class = `logoJSQ`
+- Question (h1): id = `h1-question`, class = `h1-question`
+- Questions container (div): id = `div-questions-container`, class = `div-questions-container`
+  - answer 1 (div): id = `answer-one`, class = `answer-one`
+  - answer 2 (div): id = `answer-two`, class = `answer-two`
+  - answer 3 (div): id = `answer-three`, class = `answer-three`
+  - answer 4 (div): id = `answer-four`, class = `answer-four`
 
 *CSS*
 - Questions are displayed 2x2 
 #### Interaction
+*Listeners*
+- events are triggered by clicking the `start` button
 
 *Handlers*
-- 'hide.js' – hide the name of the quiz, the the description and the start button
-- 'display-h1.js' – display in the 'h1-question' the text of the question from json file
-- 'display-answers.js' – display the answers of that question one-by-one in divs 'answer-one', 'answer-two', 'answer-three', 'answer-four'
-
+- `hide.js` – hide the name of the quiz, the the description and the start button
+- `display.js` – display the text of the question from `json` file, display the answers of that question one-by-one in divs `answer-one`, `answer-two`, `answer-three`, `answer-four` 
+- change innerHTML of the button, from 'Start' to 'Next'
 ---
 
 ## 3. Select an answer (one question at a time)
@@ -141,12 +138,12 @@ After the answer is selected, the background color of the correct answer's div t
 - [ ] The correct answer div is displayed in greenish
 - [ ] The wrong answers divs are displayed in reddish
 
-This user story is developed on the branch `3-select-answer`.  
+This user story is developed on the branch `3-select`.  
 This branch is merged into the `master` branch after completion.
 
 #### Business logic 
-- in the object of the question, find the answer where "correct" equals to true – 'find-true.js'
-- find the answers where 'correct' equals to false – 'find-false.js'
+- in the object of the question, find the answer where "correct" equals to true – `findTrue.js`
+- find the answers where 'correct' equals to false – `findFalse.js`
 #### Interface
 
 *CSS*
@@ -158,7 +155,7 @@ This branch is merged into the `master` branch after completion.
 - if 'correct' equals to true and 'selected' equals to true, add class 'correct', else => add class 'incorrect'
 
 *Listeners*
-- 'choose-listener.js', add event listener to the div, on click
+- event is triggered by clicking on the div (for all four divs), listener  `selectListener.js`
 
 ---
 ## 4. View the Progress
@@ -175,24 +172,24 @@ This user story is developed on the branch `4-progress`
 This branch is merged to the `master`
 
 #### Business logic
-- use 'add' function to increment one number to the XX
-- use 'save' to save the result
+- use `add` function to increment one number to the XX
+- use `save` to save the result
 - define json-answers array length to define the YY number
 #### Interface
 *HTML*
-- progress (div) inside the header: id = 'progress', class = 'progress'
-  - numbers (p): id = 'p-progress', class = 'p-progress'
+- progress (div) inside the header: id = `progress`, class = `progress`
+  - numbers (p): id = `p-progress`, class = `p-progress`
   
 *CSS*
-- style for the progress div 
-- style for numbers (paragraph)
+- style the progress div 
+- style numbers (paragraph)
 #### Interaction
 *Handlers*
-- show the first number 
-- show the second number 
+- `questionsCompleted.js`: show the first number as the number of the completed questions
+- `questionNumber.js`: show the second number as the array length
   
 *Listeners*
-- the event is triggered by clicking on one of the 'answer' divs
+- `progressListener.js`: the event is triggered by clicking on one of the `answer` divs
 
 ---
 ## 5. Next question
@@ -207,23 +204,17 @@ This user story is developed on the branch `5-next`
 This branch is merged into the `master` branch after completion.
 
 #### Business logic
-- increment the id of the question by using 'add.js' of business-logic
+- increment the id of the question by using `add.js` of business-logic
 - access the question and answers of the new id
-#### Interface
-*HTML*
-- button changes innerHTML: id = 'btn-next', class = 'btn-next'
-  
-*CSS*
-- style of the button
 
 #### Interaction
 *Handlers*
 - reset the current question;
-- display in the 'h1-question' the text of the new question from json file 
-- display the answers of the new question one-by-one in divs 'answer-one', 'answer-two', 'answer-three', 'answer-four'
+- display in the `h1-question` the text of the new question from `data.json`
+- display the answers of the new question one-by-one in divs `answer-one`, `answer-two`, `answer-three`, `answer-four`
   
 *Listeners*
-- add listeners to the 'next' button with 'click'
+- event is triggered by clicking the 'next' button
 
 ---
 ## 6. Result of the quiz
@@ -238,21 +229,22 @@ This user story is developed on the branch `6-result`
 This branch is merged into the `master` branch after completion.
 
 #### Business logic
-- access the number of correct questions  <!-- how? -->
+- access the number of correct questions
 - access the array length of the json file to define the full number of questions
 
 #### Interface
 *HTML*
-- added with the handlers
-  
-*CSS*
+- paragraph: Your result is : XX points, where XX is the number of the correct answers
 
 #### Interaction
 *Handlers*
 - hide the question and the answers from the previous questions
 - hide the progress div
-- add paragraph showing the results
+- add div showing the results, where the number of correct answers is shown
+- hide the button
 
+*Listeners*
+- event is triggered by clicking on the Next button of the last question (where id = array.length)
 ---
 ## 7. Restart the quiz
 
@@ -266,16 +258,15 @@ This branch is merged into the `master` branch after completion.
 #### Business logic
 - reset the score
 - reset the progress
-- access the question with id = 1 from 'data.json' 
-#### Interface
-*HTML*
-- 'Restart' button (button): id = 'btn-restart', class = 'btn-restart';
+- access the question with id = 1 from `data.json`  
 
-*CSS*
-- style of the button 
+#### Interface
+*HTML* 
+- the button changes its innerHTML from Next to Restart
 #### Interaction
 *Handlers*
-- display the first question with answers
+- cancel hiding the button, change its innerHTML to 'Restart' instead 
+- after clicking the button, display the first question with answers
 - display zero in the progress
 - display zero in results
   
@@ -298,7 +289,7 @@ This branch is merged into the `master` branch after completion.
 - to define the second number, access json-answers array length
 #### Interface
 *HTML*
-- div: id = 'liveScore', class = 'liveScore';
+- div: id = `liveScore`, class = `live-score`;
 
 *CSS*
 - style the text in the div

@@ -1,12 +1,14 @@
 import { findAll } from '../data-access/find-all.js';
 
-export const accessQuestion = () => {
+export const accessQuestion = (i) => {
   const data = findAll();
   const questionsObject = data[0];
   const questionsArray = Object.values(questionsObject);
-  console.log(questionsArray[1][0].question);
+  console.log(questionsArray[1][i].question);
   // return question;
 };
+
+// accessQuestion(0);
 
 // import { allKeys } from '../data-access/all-keys.js';
 

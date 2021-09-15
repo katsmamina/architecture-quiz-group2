@@ -4,8 +4,8 @@ export const accessQuestion = (i) => {
   const data = findAll();
   const questionsObject = data[0];
   const questionsArray = Object.values(questionsObject);
-  console.log(questionsArray[1][i].question);
-  // return question;
+  //   console.log(questionsArray[1][i].question);
+  return questionsArray[1][i].question;
 };
 
 // accessQuestion(0);

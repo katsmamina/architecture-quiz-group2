@@ -4,7 +4,7 @@ export const accessQuestion = () => {
   const data = findAll();
   const questionsObject = data[0];
   const questionsArray = Object.values(questionsObject);
-  console.log(questionsArray[1]);
+  console.log(questionsArray[1][0].question);
   // return question;
 };
 

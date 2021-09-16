@@ -5,5 +5,5 @@ export const accessAnswers = () => {
   const questionsObject = data[0];
   const questionsArray = Object.values(questionsObject);
   console.log(questionsArray[1][0].answers[1].text);
-  // return questionsArray[1][i].answers;
+  return questionsArray[1][0].answers[1].text;
 };

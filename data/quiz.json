@@ -7,22 +7,22 @@
         "answered": false,
         "answers": [
           {
-            "text": "const name = \"Tim\";",
+            "text": "const name = \"Tim\"",
             "correct": true,
             "selected": false
           },
           {
-            "text": "name = \"Tim\";",
+            "text": "name = \"Tim\"",
             "correct": false,
             "selected": false
           },
           {
-            "text": "let name = \"Tim\";",
+            "text": "let name = \"Tim\"",
             "correct": true,
             "selected": false
           },
           {
-            "text": "var name = \"Tim\";",
+            "text": "var name = \"Tim\"",
             "correct": true,
             "selected": false
           }

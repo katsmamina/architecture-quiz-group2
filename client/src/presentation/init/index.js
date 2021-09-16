@@ -5,12 +5,11 @@ import { loadListener } from '../listeners/load.js';
 
 import { startQuiz } from '../listeners/start.js';
 
-// you can get rid of this one
-// import { addNumberListener } from '../listeners/add-number.js';
 import { accessQuestion } from '../../business-logic/get-question.js';
+import { accessAnswers } from '../../business-logic/get-answer.js';
 
 // keep this listener call!  you will need it
 loadListener();
-// you can get rid of this one
-// addNumberListener();
+
 accessQuestion();
+accessAnswers();

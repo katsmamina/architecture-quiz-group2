@@ -7,7 +7,7 @@ export const displayFirstQuestionAndAnswers = (e) => {
   document.getElementById('container-quiz').classList.remove('hide');
   document.getElementById('btn').innerHTML = 'Next';
   const question = accessQuestion(0);
-  document.getElementById('quiz-question').innerText = question;
+  document.getElementById('question-header').innerText = question;
   const answers = accessAnswers(0);
   document.getElementById('p-answer-1').innerText = answers[0].text;
   document.getElementById('p-answer-2').innerText = answers[1].text;

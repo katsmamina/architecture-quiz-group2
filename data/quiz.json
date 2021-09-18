@@ -3,7 +3,7 @@
     "questions": [
       {
         "id": 1,  
-        "question": "Which are correct ways to declare a variable in JavaScript? (strict mode)",
+        "question": "Which is the correct way to declare a variable that has to be initialized immediately? (strict mode)",
         "answered": false,
         "answers": [
           {
@@ -18,12 +18,12 @@
           },
           {
             "text": "let name = \"Tim\"",
-            "correct": true,
+            "correct": false,
             "selected": false
           },
           {
             "text": "var name = \"Tim\"",
-            "correct": true,
+            "correct": false,
             "selected": false
           }
         ],

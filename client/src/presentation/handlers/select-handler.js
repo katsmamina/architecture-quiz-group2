@@ -1,5 +1,6 @@
 import { accessAnswers } from '../../business-logic/get-answer.js';
 
+
 export const changeColor = (e) => {
   e.preventDefault();
   const answers = accessAnswers(0);
@@ -17,8 +18,8 @@ export const changeColor = (e) => {
     document.getElementById('div-answer-4').classList.add('correct');
   else document.getElementById('div-answer-4').classList.add('incorrect');
 
-  // makes all other div disable after user selection
+  // makes all div disable after user selection
   document.querySelectorAll('.div-answer').forEach((element) => {
-    if (e.srcElement.id !== element.id) element.classList.add('disable');
+    element.classList.add('disable');
   });
 };

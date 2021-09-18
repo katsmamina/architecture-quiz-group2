@@ -114,6 +114,11 @@ h2 {
   margin: 5px 0;
 }
 
+.div-answer::after {
+  border: none;
+  margin: 10px 0;
+}
+
 .p-answer {
   hyphens: auto;
   font-size: max(0.75em, min(1em, calc(var(--base-scale) * 1)));
@@ -148,7 +153,7 @@ h2 {
 .correct {
   background-color: #93f1ba;
   padding: 0.2rem;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   font-size: 1rem;
   color: #3e5145;
   margin: 0.5rem;
@@ -157,8 +162,8 @@ h2 {
 
 .incorrect {
   background-color: #b32929;
-  padding: 0.5rem;
-  border-radius: 5px;
+  padding: 0.2rem;
+  /* border-radius: 5px; */
   font-size: 1rem;
   color: #decba4;
   margin: 0.5rem;
@@ -195,7 +200,7 @@ h2 {
 }
 
 .disable {
-  pointer-events:none
+  pointer-events:none;
 }
 
 /* /* @import url('./list.css'); */

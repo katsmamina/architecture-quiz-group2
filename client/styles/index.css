@@ -137,7 +137,7 @@ h2 {
 
 .answer {
   background-color: #decba4;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 5px;
   font-size: 1rem;
   color: #3e5151;
@@ -147,7 +147,7 @@ h2 {
 
 .correct {
   background-color: #93f1ba;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 5px;
   font-size: 1rem;
   color: #3e5145;

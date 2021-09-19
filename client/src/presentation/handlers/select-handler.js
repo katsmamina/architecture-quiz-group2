@@ -18,7 +18,7 @@ export const changeColor = (e) => {
     document.getElementById('div-answer-4').classList.add('correct');
   else document.getElementById('div-answer-4').classList.add('incorrect');
 
-  // makes all div disable after user selection
+  // makes all answer div disable after user selection
   document.querySelectorAll('.div-answer').forEach((element) => {
     element.classList.add('disable');
   });

@@ -5,5 +5,7 @@ import { loadListener } from '../listeners/load.js';
 
 import { startQuiz } from '../listeners/start.js';
 
+import '../listeners/select-listener.js';
+
 // keep this listener call!  you will need it
 loadListener();

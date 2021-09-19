@@ -137,7 +137,7 @@ h2 {
 
 .answer {
   background-color: #decba4;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 5px;
   font-size: 1rem;
   color: #3e5151;
@@ -147,7 +147,7 @@ h2 {
 
 .correct {
   background-color: #93f1ba;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 5px;
   font-size: 1rem;
   color: #3e5145;
@@ -157,7 +157,7 @@ h2 {
 
 .incorrect {
   background-color: #b32929;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 5px;
   font-size: 1rem;
   color: #decba4;
@@ -192,6 +192,10 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.disable {
+  pointer-events:none;
 }
 
 /* /* @import url('./list.css'); */
